@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Creations</title>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#" onclick="navigateTo('home'); return false;" class="brand-link">
+          <div class="logo-icon">D</div>
+          <span id="nav-brand">D Creations</span>
+        </a>
+        <div id="desktop-nav" class="desktop-nav">
+          <a href="#" onclick="navigateTo('home'); return false;" class="nav-link active" data-page="home">Home</a>
+          <a href="#" onclick="navigateTo('bangles'); return false;" class="nav-link" data-page="bangles">Bangles</a>
+          <a href="#" onclick="navigateTo('hair'); return false;" class="nav-link" data-page="hair">Hair</a>
+          <a href="#" onclick="navigateTo('earrings'); return false;" class="nav-link" data-page="earrings">Earrings</a>
+          <a href="#" onclick="navigateTo('pins'); return false;" class="nav-link" data-page="pins">Saree Pins</a>
+        </div>
+        <button id="hamburger" onclick="toggleMobile()"><i data-lucide="menu"></i></button>
+      </div>
+    </nav>
+    <div id="content" class="page-transition"></div>
+    <footer>
+      <p id="footer-text">Thank you for visiting D Creations</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
